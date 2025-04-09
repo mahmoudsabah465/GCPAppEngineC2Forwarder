@@ -22,7 +22,7 @@ def root(url):
     try:
         r = requests.request(request.method, path, params=request.args, stream=True, 
                             headers=dict(request.headers), allow_redirects=False, 
-                            data=request.form, timeout=timeout)
+                            data=request.get_data(), timeout=timeout)
         def generate():
             for chunk in r.raw.stream(decode_content=False):
                 yield chunk
@@ -40,4 +40,4 @@ def root(url):
 
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=8080, debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get('PORT', 8080)))
