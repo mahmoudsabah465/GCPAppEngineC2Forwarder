@@ -2,9 +2,9 @@
 runtime: python312
 
 env_variables:
-  DESTINATION: "<C2_INTERNAL_IP>"
+  DESTINATION: "<10.128.0.2:80>"
 
 
 vpc_access_connector:
-  name: projects/<PROJECT_ID>/locations/<REGION>/connectors/<CONNECTOR_NAME>
+  name: projects/qwiklabs-gcp-00-5dd42e151fa6/locations/us-central1/connectors/testconnector
   egress_setting: private-ranges-only
