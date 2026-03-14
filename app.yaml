@@ -6,5 +6,5 @@ env_variables:
 
 
 vpc_access_connector:
-  name: projects/qwiklabs-gcp-00-5dd42e151fa6/locations/us-central1/connectors/testconnector
+  name: projects/qwiklabs-gcp-02-58af73b6555f/locations/us-central1/connectors/testconnector
   egress_setting: private-ranges-only
