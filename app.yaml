@@ -6,5 +6,5 @@ env_variables:
 
 
 vpc_access_connector:
-  name: projects/dulcet-buttress-484713-m8/locations/us-central1/connectors/testconnector
+  name: projects/qwiklabs-gcp-00-542b577b7439/locations/us-central1/connectors/testconnector
   egress_setting: private-ranges-only
